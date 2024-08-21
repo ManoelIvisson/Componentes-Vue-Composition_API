@@ -2,11 +2,17 @@
   import { ref } from 'vue'
 
   const props = defineProps({
-    name: {type: String, default: 'Default Name'},
+    name: {type: String, default: 'Default Name', validator(value) {
+      return value.startsWith('O')
+    }},
     selected: {type: Boolean, default: false}
   })
 
-  const emit = defineEmits(['selected'])
+  const emit = defineEmits({
+    selected(payload) {
+      return typeof payload === 'string'
+    }
+  })
 
   function selectPlan() {
     emit('selected', props.name)
