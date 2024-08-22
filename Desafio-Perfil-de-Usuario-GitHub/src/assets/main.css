@@ -10,6 +10,12 @@ body {
     justify-content: center;
 }
 
+#titulo {
+    text-align: center;
+    text-shadow: 1px 1px 2px #a66844d7;
+    margin: 1em;
+}
+
 .card {
     background-color: #038C8C;
     display: flex;
