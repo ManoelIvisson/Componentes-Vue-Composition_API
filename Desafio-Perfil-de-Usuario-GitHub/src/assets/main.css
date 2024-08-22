@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(90deg, #03A696, #04BF68);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #038C8C;
+    display: flex;
+    width: 500px;
+    margin: auto;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 1em;
+    box-shadow: 2px 2px 1px rgb(0, 0, 0, 50%);
+}
+
+.imagemUsuario {
+    height: 250px;
+    width: 50%;
+}
+
+.imagemUsuario img {
+    width: 100%;
+}
+
+.infoUsuario p {
+    margin: 0px 16px;
+}
+
+.infoUsuario {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%;
+}
+
+.infoUsuario h2 {
+    margin-left: 16px;
+    padding: 1em 0;
+}
+
+.infoUsuario p {
+    padding-bottom: 0.2em;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+    width: 8em;
+    padding: 0.75em;
+    border: none;
+    border: 2px solid #91D9CC;
+    border-radius: 0.5em;
+    background-color: #91D9CC;
+    align-self: flex-end;
+    margin: 60px 32px 0px;
+}
+
+button:hover {
+    border-color: #A66844;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
