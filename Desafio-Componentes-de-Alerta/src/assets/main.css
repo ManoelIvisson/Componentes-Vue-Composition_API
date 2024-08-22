@@ -3,11 +3,23 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .alerta {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 500px;
+  border-radius: 1em;
+  padding: 5px;
+}
+
+.comunicado {
+  display: flex;
+  gap: 10px;
   align-items: center;
 }
 
@@ -21,11 +33,18 @@ button:hover {
   cursor: pointer;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.info {
+  background-color: #295FA6;
 }
 
+.sucesso {
+  background-color: #04BF45;
+}
+
+.aviso {
+  background-color: #F29422;
+}
+
+.erro {
+  background-color: #D91E2E;
+}
